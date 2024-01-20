@@ -1,0 +1,20 @@
+form .avatar{
+    display: block;
+    margin-left: 25%;
+    width: 55px;
+}
+
+.navbar .container-avatar img,
+.pub_image .container-avatar img{
+    height: 20%;
+}
+
+.pub_image .container-avatar{
+    float: left;
+    margin-right: 15px;
+}
+
+.pub_image .data-user{
+    font-weight: bold;
+    line-height: 30px;
+}
