@@ -24,3 +24,8 @@ Route::get('/user/avatar/{filename}', [App\Http\Controllers\UserController::clas
 Route::get('/image-upload', [App\Http\Controllers\ImageController::class, 'create'])->name('image.create');
 Route::post('/image/save', [App\Http\Controllers\ImageController::class, 'save'])->name('image.save');
 Route::get('/image/file/{filename}', [App\Http\Controllers\ImageController::class, 'getimage'])->name('image.file');
+Route::get('/image/{id}', [App\Http\Controllers\ImageController::class, 'detail'])->name('image.detail');
+Route::post('/comment/save', [App\Http\Controllers\CommentController::class, 'save'])->name('comment.save');
+Route::get('/comment/delete/{id}', [App\Http\Controllers\CommentController::class, 'delete'])->name('comment.delete');
+Route::get('/like/{image_id}', [App\Http\Controllers\LikeController::class, 'like'])->name('like.save');
+Route::get('/dislike/{image_id}', [App\Http\Controllers\LikeController::class, 'dislike'])->name('like.delete');
